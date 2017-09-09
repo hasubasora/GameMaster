@@ -11,4 +11,8 @@ import { Component } from '@angular/core';//在核心模块引入了Component装
 // AppComponent其实是 typescript类 告诉ng 是个组件 需要把元数据附加到类上 
 export class AppComponent {
   title = 'app'; // {{title}} 调用
+ 
 }
+
+// 命令行創建組件
+// ng g component 組件名字

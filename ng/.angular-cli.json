@@ -10,17 +10,17 @@
             "assets",
             "favicon.ico"
         ],
-        "index": "index.html", //默認啟動src/index.html
-        "main": "main.ts", //默認啟動src/main.ts 引導啟動
+        "index": "index.html",
+        "main": "main.ts",
         "polyfills": "polyfills.ts",
         "test": "test.ts",
         "tsconfig": "tsconfig.app.json",
         "testTsconfig": "tsconfig.spec.json",
         "prefix": "app",
         "styles": [
-            "styles.css"
+            "styles.css", "../node_modules/bootstrap/dist/css/bootstrap.min.css"
         ],
-        "scripts": [],
+        "scripts": ["../node_modules/jquery/dist/jquery.min.js", "../node_modules/bootstrap/dist/js/bootstrap.min.js"],
         "environmentSource": "environments/environment.ts",
         "environments": {
             "dev": "environments/environment.ts",
