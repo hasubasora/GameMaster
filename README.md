@@ -1,6 +1,10 @@
 # GameMaster
 weCher+SHOP
 
+创建项目
+ng new 名字
+ng new router --routing
+
 安装插件
 npm install jquery --save
 告诉插件能用

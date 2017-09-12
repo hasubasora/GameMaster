@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h2>Here are some links to help you start: </h2>
+<ul>
+    <li>
+        <h2><a [routerLink]="['/']">Tour of Heroes</a></h2>
+    </li>
+    <li>
+        <!-- <h2><a [routerLink]="['/product']" [queryParams]='{id:1}'>CLI Documentation</a></h2> -->
+        <h2><a [routerLink]="['/product',2]">CLI</a></h2>
+    </li>
+    <li>
+        <input type="button" value="XXX" (click)="toProductDetails()">
+    </li>
+</ul>
+<!-- 和vue里面的 router-view -->
+<router-outlet></router-outlet>
