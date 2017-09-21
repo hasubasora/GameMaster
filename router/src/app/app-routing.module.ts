@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from "./home/home.component";
 import { ProductComponent } from "./product/product.component";
 import { Code404Component } from "./code404/code404.component";
+import { ProductDescComponent } from "./product-desc/product-desc.component";
+import { SellerInfoComponent } from "./seller-info/seller-info.component";
 // 路由配置：配置的类型
 const routes: Routes = [{
   path: '',//重定向
@@ -16,7 +18,15 @@ const routes: Routes = [{
 {
   path: 'product/:id',//<a [routerLink]="['/product'，2]">CLI</a>
   component: ProductComponent,
-  children: []
+  children: [
+    {
+      path: '',//不能用/，空白直接跳home
+      component: ProductDescComponent,
+    }, {
+      path: 'seller/:id',//不能用/，空白直接跳home
+      component: SellerInfoComponent,
+    },
+  ]
 },
 {
   path: '**',

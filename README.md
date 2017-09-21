@@ -64,8 +64,8 @@ This actually works but it's obviously only a temporary solution..
 
 
 
-
-不是ng的
+----------------------------------------------
+typescript
 
 安装编译
 npm install -g typescript
